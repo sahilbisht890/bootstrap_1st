@@ -22,9 +22,9 @@
 <body>
 
     <div class="intro">
-        <div class="navbar container navbarContainer">
-            <div class="col-8 d-md-block d-none">
-                <ul class="nav align-items-center ml-auto mb-0 mb-lg-0 gap-4 ">
+        <div class="navbarContainer d-flex align-items-center gap-5  w-100">
+            <div class=" d-md-block  d-none w-50 me-5" id="navbarLeft">
+                <ul class="nav align-items-center ml-auto mb-0 mb-lg-0 gap-4 d-flex flex-nowrap " id="listTop">
                     <li>
                         <div class="introLogo py-2 px-3 fs-5  fw-500 text-light" style="background-color: #1baba1;">
                             Fr
@@ -40,11 +40,11 @@
                         WRITING
                     </li>
                     <li class="btn mpo nav-item">ADMIN SUPPORT</li>
-                    <li class="btn mpo nav-item">VIEW ALL CATEGORY</li>
+                    <li class="btn mpo nav-item viewAllCategory ">VIEW ALL CATEGORY</li>
                 </ul>
 
             </div>
-            <div class="col-4 d-md-block d-none">
+            <div class="d-md-block  d-none w-30" id="navbarRight">
 
                 <ul class="nav align-items-center  ml-auto mb-0 mb-lg-0  gap-3">
                     <li class=" btn nav-item">
@@ -59,11 +59,61 @@
                 </ul>
 
             </div>
+
+            <div class="mobileTop w-100 d-md-none d-block d-flex justify-content-between">
+                <div class="navBarSection w-100">
+                    <nav class="navbar navbar-expand-lg container p-0">
+                        <div class="">
+                            <!-- <div class="navbar-brand logoContainerr" href="#"><img src="./public/images/footer-logo.png" alt="logo"></div> -->
+                            <button class="navbar-toggler navbar-toggler-icon border border-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                &#8801;
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav w-100 justify-content-between">
+                                    <li class="nav-item">
+                                        <a class="nav-link active navItem text-white" aria-current="page" id="home"
+                                            href="#homeSection">Home</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#about">WEB DEV</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#transport">DESIGN</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#">WRITING</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#">ADMIN SUPPORT</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#contact">VEIW ALL CATEGORY</a>
+                                    </li>
+
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#login">LOGIN</a>
+                                    </li>
+                                    <li class="nav-item navItem">
+                                        <a class="nav-link" href="#login">SIGN UP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="introLogo py-2 px-3 fs-5  fw-500 text-light"
+                    style="background-color: #1baba1;height: 5% !important;">
+                    Fr
+                </div>
+            </div>
         </div>
 
         <div class="contentIntro">
             <div class="contentText py-md-5 py-0 d-flex flex-column align-items-center">
-                <h1 class=" sameHeading fs-1">Get It Done With A Freelancer </h1>
+                <h1 class=" sameHeading fs-1 mt-md-0 mt-2">Get It Done With A Freelancer </h1>
                 <div class="mobileImage d-md-none d-block">
                     <img src="./images/replace_image_5.jpg" alt="" class="src">
                 </div>
@@ -73,16 +123,13 @@
                 <div class="searchIntro border border-0 rounded-pill d-flex d-flex justify-content-between my-3">
                     <input type="text" class="workType border border-0 rounded-pill px-4 ps-5"
                         placeholder="What type of Work you Need ?">
-                    <input type="Submit" class="send  btn border rounded-pill bgLightPink text-light px-4 py-2"
-                        value="Find">
+                    <input type="Submit" class="send  btn border rounded-pill bgLightPink text-light  sans "
+                        style="font-size: .8rem; padding: 2% 6.5%;font-weight: 500;" value="FIND">
                 </div>
 
             </div>
         </div>
-
-
     </div>
-
 
     <div class="hireContainer container py-5 d-flex flex-md-row flex-column ">
         <div class="hireHeading  sameHeading  text-md-start text-center mb-md-0 mb-3  me-md-5 my-md-3 ">
@@ -138,7 +185,7 @@
         </div>
         <div class="subheadingCategory my-2 d-md-block d-none sans">Lorem ipsum dolor sit amet consectetur, adipisicing
             elit. Exercitationem
-            deserunt</div>
+            deseruntm Lorem ipsum dolor sit amet</div>
         <div class="categoryCards d-flex flex-wrap align-items-between justify-content-between pt-5 mb-5">
             <div class="card  d-flex flex-column justify-content-between align-items-center pt-5" style="width: 18rem;">
                 <img src="./images/replace_icon.png" class="card-img-top" alt="Rocket">
@@ -172,7 +219,6 @@
                 </div>
 
                 <hr>
-
             </div>
 
             <div class="contentPart d-flex pt-3 flex-sm-column flex-md-row">
@@ -188,7 +234,7 @@
 
                 </div>
 
-                <div class="verticalline  d-none d-md-block">
+                <div class="verticalline  d-none  d-md-block">
 
                 </div>
 
@@ -229,7 +275,8 @@
             </div>
         </div>
 
-        <div class="categoryButton btn  rounded-pill py-2 mb-5 bgLightPink text-light px-4 sans" style="font-size: .8rem;">SEE ALL CATEGORY</div>
+        <div class="categoryButton btn  rounded-pill py-2 mb-5 bgLightPink text-light px-4 sans"
+            style="font-size: .8rem;">SEE ALL CATEGORY</div>
     </div>
 
     <div class="workStep d-flex flex-column  justify-content-center align-items-center">
@@ -238,7 +285,7 @@
         <div class="workSubtext d-md-block d-none mt-3 sans">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </div>
 
-        <div class="workCard d-flex flex-md-row flex-column justify-content-center align-items-center  mt-5">
+        <div class="workCard d-flex flex-md-row   flex-column justify-content-center align-items-center  mt-5">
             <div class="card  d-flex flex-column justify-content-between align-items-center py-4 px-1">
                 <img src="./images/replace_image.png" class="card-img-top" alt="Rocket">
                 <div class="card-body d-flex flex-column justify-content-between align-items-center ">
@@ -275,8 +322,7 @@
                     </p>
                 </div>
             </div>
-            <div class="workSubtext d-md-none d-block mt-3 sans">Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit.</div>
+
 
         </div>
 
@@ -294,8 +340,7 @@
         <div
             class="planType d-flex flex-md-row flex-column justify-content-between align-items-center py-md-5 px-md-5 py-3">
             <div class="card d-flex flex-column pb-4 plansCard mb-md-0 mb-3">
-                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate"
-                    >
+                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate">
                     <p class="forHover">Basic Plan</p>
                     <p class="fs-7 m-0 forHover">For medium sized teams</p>
 
@@ -317,8 +362,7 @@
 
             </div>
             <div class="card d-flex flex-column  pb-4 plansCard ">
-                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate"
-                    >
+                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate">
                     <p class="forHover">Medium Plan</p>
                     <p class="fs-7 m-0 forHover">For medium sized teams</p>
 
@@ -340,8 +384,7 @@
 
             </div>
             <div class="card d-flex flex-column  pb-4 plansCard">
-                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate"
-                    >
+                <div class="d-flex flex-column  align-items-center py-3 w-100 planRate">
                     <p class="forHover">Hight Plan</p>
                     <p class="fs-7 m-0 forHover">For medium sized teams</p>
 
@@ -377,14 +420,13 @@
                 Cupiditate possimus</div>
         </div>
         <div
-            class="reviews d-flex flex-md-row flex-column justify-content-center align-items-center d-md-flex d-none gap-5">
+            class="reviews d-flex flex-md-row text-wrap flex-column justify-content-center align-items-center d-md-flex d-none gap-5">
             <div
-                class="cardContainer  position-relative d-flex flex-column justify-content-between align-items-center gap-5 ">
+                class="cardContainer position-relative d-flex flex-column justify-content-between align-items-center  gap-5  ">
 
                 <div class="infoCard">
                     <div class="testinomilPic py-5 infoUser ">
-                        <img src="./images/replace_image1.png" alt="profilPic"
-                            class="testinomialPic  position-absolute">
+                        <img src="./images/replace_image1.png" alt="profilPic" class="testinomialPic position-absolute">
                     </div>
                     <div class="card rounded-0 text-center pb-4 pt-5 infoUser" style="width: 18rem;">
                         <div class="card-body infoUser">
@@ -396,8 +438,8 @@
                         <div class="reviewerName  sameHeading  fs-5 lightGreen infoUser">john Doe</div>
                     </div>
                 </div>
-                <div class="companyName w-50 h-50">
-                    <img src="./images/google.png" alt="Google" class="src">
+                <div class="companyNameGoogle w-50 h-50">
+                    <img src="./images/google.png" alt="" class="src">
                 </div>
 
             </div>
@@ -418,7 +460,7 @@
                         <div class="reviewerName  sameHeading  fs-5 lightGreen infoUser">john Doe</div>
                     </div>
                 </div>
-                <div class="companyName w-50 h-50">
+                <div class="companyName w-50 h-50 ">
                     <img src="./images/dribble.png" alt="dribbe" class="src">
                 </div>
 
@@ -479,59 +521,62 @@
                     </div>
 
                 </div>
+
+
                 <div class="carousel-item">
                     <div
-                    class="cardContainer  position-relative d-flex flex-column justify-content-between align-items-center gap-5 ">
+                        class="cardContainer  position-relative d-flex flex-column justify-content-between align-items-center gap-5 ">
 
-                    <div class="infoCard">
-                        <div class="testinomilPic py-5  infoUser ">
-                            <img src="./images/replace_image1.png" alt="profilPic"
-                                class="testinomialPic  position-absolute">
-                        </div>
-                        <div class="card rounded-0 text-center pb-4 pt-5 infoUser"
-                            style="width: 18rem;background-color: #1baba1">
-                            <div class="card-body infoUser">
-                                <p class="card-text infoUser text-light">Some quick example text to build on the
-                                    card title and make up
-                                    the
-                                    bulk of the
-                                    card's content.</p>
+                        <div class="infoCard">
+                            <div class="testinomilPic py-5  infoUser ">
+                                <img src="./images/replace_image1.png" alt="profilPic"
+                                    class="testinomialPic  position-absolute">
                             </div>
-                            <div class="reviewerName  sameHeading  fs-5 text-light infoUser">john Doe</div>
+                            <div class="card rounded-0 text-center pb-4 pt-5 infoUser"
+                                style="width: 18rem;background-color: #1baba1">
+                                <div class="card-body infoUser">
+                                    <p class="card-text infoUser text-light">Some quick example text to build on the
+                                        card title and make up
+                                        the
+                                        bulk of the
+                                        card's content.</p>
+                                </div>
+                                <div class="reviewerName  sameHeading  fs-5 text-light infoUser">john Doe</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="companyName w-50 h-50">
-                        <img src="./images/dribble.png" alt="dribble" class="src">
-                    </div>
+                        <div class="companyName w-50 h-50">
+                            <img src="./images/dribble.png" alt="dribble" class="src">
+                        </div>
 
+                    </div>
                 </div>
-                </div>
+
                 <div class="carousel-item">
                     <div
-                    class="cardContainer  position-relative d-flex flex-column justify-content-between align-items-center gap-5 ">
+                        class="cardContainer  position-relative d-flex flex-column justify-content-between align-items-center gap-5 ">
 
-                    <div class="infoCard">
-                        <div class="testinomilPic py-5  infoUser ">
-                            <img src="./images/replace_image1.png" alt="profilPic"
-                                class="testinomialPic  position-absolute">
-                        </div>
-                        <div class="card rounded-0 text-center pb-4 pt-5 infoUser"
-                            style="width: 18rem;background-color: #1baba1">
-                            <div class="card-body infoUser">
-                                <p class="card-text infoUser text-light">Some quick example text to build on the
-                                    card title and make up
-                                    the
-                                    bulk of the
-                                    card's content.</p>
+                        <div class="infoCard">
+                            <div class="testinomilPic py-5  infoUser ">
+                                <img src="./images/replace_image1.png" alt="profilPic"
+                                    class="testinomialPic  position-absolute">
                             </div>
-                            <div class="reviewerName  sameHeading  fs-5 text-light infoUser">john Doe</div>
+                            <div class="card rounded-0 text-center pb-4 pt-5 infoUser"
+                                style="width: 18rem;background-color: #1baba1">
+                                <div class="card-body infoUser">
+                                    <p class="card-text infoUser text-light">Some quick example text to build on the
+                                        card title and make up
+                                        the
+                                        bulk of the
+                                        card's content.</p>
+                                </div>
+                                <div class="reviewerName  sameHeading  fs-5 text-light infoUser">john Doe</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="companyName w-50 h-50">
-                        <img src="./images/envato.png" alt="Envato" class="src">
-                    </div>
+                        <div class="companyName w-50 h-50">
+                            <img src="./images/envato.png" alt="Envato" class="src">
+                        </div>
 
-                </div>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -649,7 +694,8 @@
                     </div>
                     <div class="col NatureImg"><img src="./images/rectangle_20_copy_4_2.png" alt="Nature" class="src">
                     </div>
-                    <div class="col NatureImg"><img src="./images/rectangle_20_copy_4_3.png" alt="Nature" class="src">
+                    <div class="col NatureImg lastChildFooter"><img src="./images/rectangle_20_copy_4_3.png"
+                            alt="Nature" class="src">
                     </div>
                 </div>
 
@@ -658,13 +704,10 @@
 
         <div class="footerBottom text-center" style="color:#1baba1">&copy; 2018 free PSD-template</div>
 
-
-
-
-
-
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

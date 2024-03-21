@@ -81,7 +81,143 @@
     color: white;
 }
 
+.workCard > .card
+{
+    width: 75%;
+}
+.headingPlan
+{
+    font-size: 2rem !important;
+}
+.intro  > .navbarContainer,.navbar-toggler
+{
+    padding:0 !important;
+}
+
+.navbar-toggler-icon{
+    font-size: 2rem;
+}
+
+.categoryCards > div
+{
+    border-radius: 5px;
+}
 
 }
 
-   
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1030px) 
+  
+  {
+     
+
+    html 
+    {
+        font-size: 18px;
+    }
+
+
+    .categoryCards  hr ,.categoryCards .verticalline 
+    {
+        display: none !important;
+    }
+
+    .categoryCards {
+        padding: 0 5%;
+    }
+
+    .workCard > .card
+    {
+            width: 40%;
+    }
+
+    .reviews 
+    {
+        flex-wrap: wrap;
+    }
+    .planType,.planContent
+    {
+        padding :3% 0 !important;
+    }
+
+    .planType  li 
+    {
+        text-align: left;
+    }
+
+    .planType  .card 
+    {
+        width: 30%;
+    }
+
+    .intro
+    {
+        height: auto;
+        padding:5% 5%;
+    }
+
+.navbarContainer
+{
+    padding: 2% 2%;
+    justify-content: space-between;
+}
+
+.viewAllCategory
+{
+    display: none;
+}
+
+.intro li 
+{
+    font-size: .5rem;
+}
+#navbarLeft
+{
+    margin: 0 !important;
+}
+.footer
+{
+    padding:2% 5%
+
+}
+.footerTopContent
+{
+    flex-direction: column !important;
+}
+
+.footerTopContent > div 
+{
+    margin-bottom: 5% !important;
+}
+.subtextFooter ,.blogText,.follow,.footerHeading,.blogHeading
+{
+    font-size: 1.2rem;
+}
+
+.blogImg
+{
+    height: 5rem;
+}
+
+.NatureImg
+{
+    width: 10rem;
+    height: 10rem;
+}
+
+.social
+{
+ width: 20px;
+ height: 30px;
+}
+
+.footerContent .introLogo
+{
+    width: 3rem !important;
+}
+
+
+
+
+}
