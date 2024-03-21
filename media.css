@@ -9,6 +9,13 @@
         width: 100%;
     }
 
+    .sameHeading
+    {
+        font-size: 1.2rem !important;
+    }
+    .card {
+        width: 22rem !important;
+    }
     body > div 
     {
         padding:5% 8% !important;
@@ -110,14 +117,6 @@
   and (max-width: 1030px) 
   
   {
-     
-
-    html 
-    {
-        font-size: 18px;
-    }
-
-
     .categoryCards  hr ,.categoryCards .verticalline 
     {
         display: none !important;
