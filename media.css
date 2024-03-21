@@ -1,0 +1,86 @@
+@media only screen and (max-width: 767px) {
+  
+    html 
+    {
+        font-size: 14px;
+    }
+    .aboutDeveloper > div
+    {
+        width: 100%;
+    }
+
+    body > div 
+    {
+        padding:5% 8% !important;
+    }
+
+    .NatureImg
+    {
+        width: 33%;
+        height: 10%;
+    }
+
+    .blogImg
+    {
+        width: 45%;
+        height: 10%;
+    }
+
+    .testinomialPic
+    {
+    left: 40%;
+    top: 12%;
+    }
+
+    .contentIntro
+    {
+        background-image: none;
+
+    }
+
+.planType > .card ,.infoCard > .card,.workCard > .card,.categoryCards > div
+{
+    box-shadow: 1px 1px 3px #0e0f0f;
+    margin-bottom: 5%;
+}
+
+.intro ,.contentIntro
+{
+    height: auto;
+}
+
+.searchIntro
+{
+    width: 100%;
+    height: 3rem;
+}
+
+.mobileImage
+{
+    width: 100%;
+    height:  12rem;
+}
+
+.aboutDeveloper,.hireContainer
+{
+ background-color: #f4fafa;
+
+}
+.carousel-control-prev-icon,.carousel-control-next-icon 
+{
+    filter: invert(100%); 
+}
+
+.subHeadingPlan
+{
+  font-size: 1rem;
+}
+.planRate > p ,.planRate > div,.planRate ,.planRate span
+{
+    background-color: #d02184;
+    color: white;
+}
+
+}
+
+   
