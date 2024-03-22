@@ -158,13 +158,13 @@
 
 .navbarContainer
 {
-    padding: 2% 2%;
+    padding: 3% 0%;
     justify-content: space-between;
 }
 
-.viewAllCategory
+.viewAllCategory,.followUs
 {
-    display: none;
+    display: none !important;
 }
 
 .intro li 
@@ -189,14 +189,14 @@
 {
     margin-bottom: 5% !important;
 }
-.subtextFooter ,.blogText,.follow,.footerHeading,.blogHeading
+.subtextFooter ,.blogText,.footerHeading,.blogHeading
 {
     font-size: 1.2rem;
 }
 
 .blogImg
 {
-    height: 5rem;
+    height: 6rem;
 }
 
 .NatureImg
@@ -216,6 +216,15 @@
     width: 3rem !important;
 }
 
+.footerCollage > div ,.footerCollage
+{
+    width: 100%;
+
+}
+.NatureImg
+{
+    width: 30%;
+}
 
 
 
